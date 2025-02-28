@@ -1,0 +1,90 @@
+.divContact{
+    display: flex;
+    height:90px;
+                        padding:10px;
+                        background-color:rgb(255, 255, 255);
+                        box-shadow:0 0 1px 1px rgba(155, 150, 150, 0.05), 0 0 2px 2px rgba(187, 178, 178, 0.08), 0 0 6px 6px rgba(182, 175, 175, 0.1), 0 0 4px 4px rgba(187, 179, 179, 0.12), 0 0 20px 20px rgba(177, 166, 166, 0.14);
+                        margin-left: 0 ;
+                        margin-top:30px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        opacity: 0;
+                        transform: translateY(150px);
+                        transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.divContact.in-view{
+    opacity: 1;
+    transform: translateY(0);
+    color: black;
+}
+.rowContact{
+    box-shadow:0 0 1px 1px rgba(155, 150, 150, 0.05), 0 0 2px 2px rgba(187, 178, 178, 0.08), 0 0 6px 6px rgba(182, 175, 175, 0.1), 0 0 4px 4px rgba(187, 179, 179, 0.12), 0 0 20px 20px rgba(177, 166, 166, 0.14);
+    padding:10px;
+    margin: 30px auto 60px auto;
+    opacity: 0;
+    transform: translateY(150px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+
+
+}
+.rowContact.in-view{
+    opacity: 1;
+    transform: translateY(0);
+}
+.divMap{
+    opacity: 0;
+    transform: translateY(150px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.divMap.in-view{
+    opacity: 1;
+    transform: translateY(0);
+}
+.divIcon{
+    width:60px;
+    height:60px;
+    background-color:rgb(194, 8, 8);
+    border-radius:50%;
+    margin:5px 20px;
+}
+.divText{
+    text-align: left;
+    padding-top: 8px ;
+    font-size: 15px;
+}
+input{
+    width:100%;
+    margin:10px auto;
+    height:70%;
+    padding:15px 20px;
+    border-radius:5px;
+    
+}
+input:focus{
+    border: 2px solid rgb(194, 8, 8);
+    outline: none;
+}
+
+  #colInput{
+    padding:20px 20px 160px 20px ;
+    margin-bottom: 0px;
+
+  }
+
+  .btnSubmit{
+    background-color: rgb(194, 8, 8);
+     border-radius: 40px;
+     padding: 10px 30px;
+     border: none;
+     margin: 0px auto 20px auto;
+    color: white;
+  }
+  .icon{
+    width: 30px;
+     height: 30px;
+     color: white;
+     margin: 15px auto ;
+    }
+    h5{
+        font-size: 19px;
+    }
+   

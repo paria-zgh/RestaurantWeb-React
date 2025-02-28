@@ -1,0 +1,101 @@
+.menuText{
+text-align: center;
+}
+.textAnimation.in-view{
+  opacity: 1;
+  transform: translateY(0); 
+}
+.textAnimation{
+  text-align: center;
+ opacity: 0;
+transform: translateY(150px);
+transition: opacity 1s ease-out, transform 1s ease-out; 
+margin-bottom: 50px;
+}
+.menuBtn{
+color: black;
+background:none;
+border: none;
+cursor: pointer;
+padding: 17px ;
+font-size: large;}
+.menuBtn:hover{
+    color:rgb(145, 9, 9);
+    scale: 1.2;
+    font-weight: bold;
+}
+.menuBtn:focus{
+  color:rgb(145, 9, 9);
+  scale: 1.2;
+}
+.starterCol{
+background-color: rgba(226, 235, 238, 0.363);
+padding: 30px;
+border-radius: 10px;
+-webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+mask-image: radial-gradient(circle, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+}
+.starterCol:hover{
+    background-color: rgba(189, 194, 238, 0.438);
+    cursor: pointer;
+}
+.bgMenuBtn{
+    background-color: rgba(226, 235, 238, 0.363);
+    -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+    mask-image: radial-gradient(circle, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+    width: 100%;
+    margin: 50px 0 20px 0px;
+    opacity: 0;
+    transform: translateY(150px);
+    transition: opacity 1s ease-out,transform 1s ease-out;
+}
+.bgMenuBtn.in-view{
+  opacity: 1;
+  transform: translateY(0);
+}
+.divMenu{
+  opacity: 0;
+  transform: translateY(150px);
+  transition: opacity 1s ease-out,transform 1s ease-out;
+}
+.divMenu.in-view{
+  opacity: 1;
+  transform: translateY(0);
+}
+.modal-body img {
+    background-color: transparent; 
+  }
+    .fullscreen-modal .modal-dialog {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .fullscreen-modal .modal-content {
+    background-color: transparent;
+    border: none;}
+    .nav.left{
+        left: -23rem;
+        margin-top: 15rem;
+      } 
+      .nav.right {
+        right: -23rem;
+        margin-top: 15rem;
+      }
+      .nav {
+        position: absolute;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        font-size: 2rem;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+      }
+      .custom-backdrop {
+        background-color: rgba(233, 26, 26, 0.938); 
+      }

@@ -1,0 +1,34 @@
+.colChefs{
+    overflow: hidden;
+     position: relative;;
+     padding: 0px ;
+}
+.divContainer{
+    border-radius:10px;
+    border:solid 1px gray;
+    padding-bottom:3px;
+    margin:10px;
+    position:relative;
+    height:41.5rem;
+     box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.05), 0 0 2px 2px rgba(0, 0, 0, 0.08), 0 0 3px 3px rgba(0, 0, 0, 0.1), 0 0 4px 4px rgba(0, 0, 0, 0.12), 0 0 5px 5px rgba(0, 0, 0, 0.14);
+     transition: transform 0.3s ease-in-out;
+
+}
+.divContainer:hover{
+    transform: scale(1.05);
+}
+.card-body{
+    margin:0;
+    padding:35px 20px 35px 20px;
+}
+.chefsAnimation{
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1s ease-out,transform 1s ease-out;
+    margin-top: 20px;
+}
+.chefsAnimation.in-view{
+    opacity: 1;
+    transform: translateY(0);
+    margin-top: 3rem;  
+}

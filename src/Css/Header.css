@@ -1,0 +1,71 @@
+
+  .navBrandHeader{
+    padding:20px 70px;
+    font-size:28px;
+    font-weight:bold;
+    color:rgb(194, 8, 8)
+  }
+  .navBody{
+    position: fixed;
+    background-color: rgb(251, 251, 252);
+    padding: 15px 10rem;
+    box-shadow:0 0 1px 1px rgba(155, 150, 150, 0.05), 0 0 2px 2px rgba(187, 178, 178, 0.08), 0 0 6px 6px rgba(182, 175, 175, 0.1), 0 0 4px 4px rgba(187, 179, 179, 0.12), 0 0 20px 20px rgba(177, 166, 166, 0.14);
+      margin-bottom: 2px;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+  }
+  .btnn{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(194, 8, 8);
+    border-radius: 40px;
+    padding: 9px 27px 10px 25px;
+    border: none;
+    margin-left: 7rem;
+    color: white;
+    height: 50px;   
+    }
+.nv {
+  color: black;
+  position: relative;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+  font-size: 18px;
+  font-weight: bold;
+}
+.nv:hover {
+  color: red;
+}
+.nv.active {
+  color: red;
+}
+
+.nv.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+  width: 75px;
+  height: 3px;
+  background-color: rgb(194, 8, 8); 
+  transition: width 0.3s ease-in-out;
+}
+.nv::after {
+  content: "";
+  position: absolute;
+  left: 30px;
+  bottom: 0px; 
+  width: 0px;
+  height: 3px; 
+  background-color: rgb(194, 8, 8); 
+  transition: width 0.3s ease-in-out;
+}
+.nv:hover::after {
+  left: 30px;
+  width: 75px;
+}
+.nv.active:hover::after {
+  width: 75px; 
+}

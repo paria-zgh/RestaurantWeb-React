@@ -1,0 +1,76 @@
+.aboutContainer{
+text-align: center;
+justify-content: center;
+padding: 2rem;
+}
+.aboutCol2{
+  opacity: 0;
+  transform: translateY(150px);
+  transition: opacity 1s ease-out, transform 1s ease-out;   
+  }
+  .aboutCol2.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+.aboutCol1,
+.aboutCol2,
+.aboutCol3 {
+  will-change: opacity, transform;
+}
+.aboutCol1{
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  text-align: center;
+  opacity: 0;
+transform: translateY(150px);
+transition: opacity 1s ease-out, transform 1s ease-out; 
+}
+.aboutCol1.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  ul li {
+    position: relative; 
+    padding-left: 30px; 
+    margin: 10px; 
+    line-height: 1.5; 
+  }
+    ul li::before {
+    content: '✔'; 
+    color: blue;
+    background-color: rgb(163, 19, 19); 
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 33%;
+    transform: translateY(-50%);
+  }
+  .divAnimation{
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 2s ease-out, transform 3s ease-out;
+  }
+  .divAnimation.in-view{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  
+  

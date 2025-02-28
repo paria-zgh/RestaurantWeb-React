@@ -1,0 +1,43 @@
+.WhyCard{
+    background-color: rgba(182, 7, 7, 0.877);
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 2%;
+    margin: 30px;
+    color: white;
+    text-align: center;
+    height: 25rem;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.WhyCard:hover{
+    background-color: rgb(110, 35, 33);
+box-shadow: 0 9px 8px 0 rgba(66, 66, 61, 0.774), 0 9px 20px 0 rgba(0, 0, 0, 0.19);
+;}
+h2{padding: 40px;
+text-align: center;
+}
+h4{
+  text-align: center;
+  padding: 10px;
+  color: rgb(52, 172, 172);
+}
+  .WhyCard.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .WhyCard-body {
+    padding: 10px;
+  }
+  .why{
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    padding: 40px;
+  }
+  .why.in-view{
+    opacity: 1;
+    transform: translateY(0);
+  }
